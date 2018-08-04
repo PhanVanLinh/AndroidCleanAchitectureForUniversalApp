@@ -3,7 +3,7 @@ package linh.vn.domain.interactor.outputport
 import io.reactivex.functions.Action
 import io.reactivex.functions.Consumer
 
-abstract class Observer {
+abstract class CustomObserver {
 
     internal fun onErrorConsumer(): Consumer<in Throwable> {
         return Consumer { onError(it) }
